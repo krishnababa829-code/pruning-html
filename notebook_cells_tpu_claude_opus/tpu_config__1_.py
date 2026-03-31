@@ -47,7 +47,7 @@ ROW_COUNT = 100  # <-- CHANGE THIS: number of rows to process
 # Model selection (see sizing guide above)
 # For Colab TPU v2-8 with FSDP: up to 32B (tight) or 14B (comfortable)
 # For Kaggle TPU v3-8 with FSDP: up to 72B (tight) or 32B (comfortable)
-MODEL_ID = "Qwen/Qwen2.5-7B-Instruct"  # <-- CHANGE THIS
+MODEL_ID = "Qwen/Qwen2.5-14B-Instruct"  # <-- CHANGE THIS
 
 # Precision: bfloat16 is TPU-native and gives best performance
 DTYPE = "bfloat16"  # <-- CHANGE THIS
@@ -57,7 +57,7 @@ MAX_TOKENS_PER_ROW = 8000
 MAX_NEW_TOKENS = 4096
 
 # Generation parameters
-TEMPERATURE = 0.3
+TEMPERATURE = 0.5
 TOP_P = 0.9
 
 # =============================================================================
