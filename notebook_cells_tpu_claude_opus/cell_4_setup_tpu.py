@@ -114,7 +114,7 @@ if device_type == "tpu":
     else:
         tpu_ver, hbm_per_core, cores = "unknown", 8, 8
     total_mem_gb = cores * hbm_per_core
-    usable_gb = int(total_mem_gb * 0.85)
+    usable_gb = int(total_mem_gb * 0.80)
     fits = model_bf16_gb <= usable_gb
     print(f"  TPU:            {tpu_ver} ({cores} cores x {hbm_per_core} GB = {total_mem_gb} GB)")
     device_info = {"tpu_version": tpu_ver, "cores": cores, "total_hbm_gb": total_mem_gb}
