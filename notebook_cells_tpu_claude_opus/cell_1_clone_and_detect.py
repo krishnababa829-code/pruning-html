@@ -16,6 +16,8 @@ import sys
 import subprocess
 import platform
 import time
+import re
+from urllib.parse import urlparse
 
 print("\n" + "=" * 60)
 print("  TPU CELL 1: CLONE REPO & DETECT ACCELERATOR")
